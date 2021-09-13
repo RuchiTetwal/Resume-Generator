@@ -12,7 +12,15 @@ function generateCV(){
 
     document.getElementById("skillsT").innerHTML= document.getElementById("skills").value;
 
-    document.getElementById("imgT").innerHTML= document.getElementById("img").value;
+   
+
+    let file= document.getElementById("img").files[0];
+
+    let reader = new FileReader();
+
+    reader.readAsDataURL(file);
+    document.getElementById("imgT").src= reader.result;
+    
 
     document.getElementById("LinkedinT").innerHTML= document.getElementById("Linkedin").value;
     document.getElementById("LinkedinT").href=document.getElementById("Linkedin").value;
