@@ -19,7 +19,11 @@ function generateCV(){
     let reader = new FileReader();
 
     reader.readAsDataURL(file);
-    document.getElementById("imgT").src= reader.result;
+
+    reader.onloadend = function(){
+        document.getElementById("imgT").src= reader.result;
+    }
+
     
 
     document.getElementById("LinkedinT").innerHTML= document.getElementById("Linkedin").value;
