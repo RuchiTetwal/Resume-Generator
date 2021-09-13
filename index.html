@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Resume Generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS ---->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container" id="cv-form">
+        <h1 class="text-center my-5 heading">Resume Generator</h1>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="card a-card">
+                    <div class="card-header a-card-header text-center">
+                        <h2>Personal Details</h2>
+                    </div>
+                    <div class="card-body a-card-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="name"><b>Name</b></label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter Your Name">
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-sm-6">
+                                    <label for="email"><b>Email </b><i class="fas fa-envelope"></i></label>
+                                    <input type="email" class="form-control" id="email"
+                                        placeholder="Enter Your Mail Id">
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <label for="contact"><b>Contact </b><i class="fas fa-address-card"></i></label>
+                                    <input type="" class="form-control" id="contact"
+                                        placeholder="Enter Your Contact No.">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="form-group col-sm-6">
+                                    <label for="objective"><b>Objective</b></label>
+                                    <textarea rows="5" class="form-control" placeholder="About Yourself"
+                                        id="objective"></textarea>
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <label for="skills"><b>Skills</b></label>
+                                    <textarea rows="5" class="form-control" placeholder="Enter your Skills"
+                                        id="skills"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="img"><b>Select Your Photo</b></label>
+                                <input id="img" type="file" class="form-control" />
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row my-5">
+            <div class="col-12">
+                <div class="card a-card">
+                    <div class="card-header a-card-header text-center">
+                        <h2>Profile Links</h2>
+                    </div>
+                    <div class="card-body a-card-body">
+                        <form>
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <label for="Linkedin"><b>LinkedIn </b><i class="fab fa-linkedin"></i></label>
+                                    <input type="text" class="form-control"
+                                        placeholder="Enter your LinkedIn profile link" id="Linkedin">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="github"><b>Github </b><i class="fab fa-github-square"></i></label>
+                                    <input type="text" class="form-control" placeholder="Enter your github profile link"
+                                        id="github">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <label for="codechef"><b>Codechef </b><i class="fas fa-laptop-code"></i></label>
+                                    <input type="text" class="form-control" placeholder="Enter your codechef link"
+                                        id="codechef">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="hackerrank"><b>Hackerrank </b><i class="fab fa-hackerrank"></i></label>
+                                    <input type="text" class="form-control" placeholder="Enter your codechef link"
+                                        id="hackerrank">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row my-5">
+            <div class="col-12">
+                <div class="card a-card">
+                    <div class="card-header a-card-header">
+                        <h3 class="text-center"> Education</h3>
+                    </div>
+                    <div class="card-body a-card-body">
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h4><b>College </b><i class="fas fa-graduation-cap"></i> </h4>
+
+                                    <hr />
+
+                                    <div class="form-group">
+                                        <label for="collegeName"><b>College name</b></label>
+                                        <input type="text" class="form-control" placeholder="Enter your college name"
+                                            id="collegeName">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="qualification"><b>Qualification</b></label>
+                                        <input type="text" class="form-control" placeholder="Enter your Qualification"
+                                            id="qualification">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="clgCgpa"><b>CGPA or Percentage</b></label>
+                                        <input type="text" class="form-control" placeholder="Enter your CGPA/Percenatge"
+                                            id="clgCgpa">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="collegeYear"><b>Year</b></label>
+                                        <input type="text" class="form-control" placeholder="Enter your college year"
+                                            id="collegeYear">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h4><b>School </b><i class="fas fa-university"></i></h4>
+                                    <hr>
+                                    <div class="form-group">
+                                        <label for="schoolName"><b>School Name</b></label>
+                                        <input type="text" class="form-control" placeholder="Enter your School name"
+                                            id="schoolName">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="sscCgpa"><b>SSC CGPA or Percentage</b></label>
+                                        <input type="text" class="form-control"
+                                            placeholder="Enter your SSC CGPA/percentage" id="sscCgpa">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="hscCgpa"><b>HSC CGPA or Percentage</b></label>
+                                        <input type="text" class="form-control"
+                                            placeholder="Enter your HSC CGPA/percentage" id="hscCgpa">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="sclYear"><b>Year</b></label>
+                                        <input type="text" class="form-control" placeholder="Enter your SSC year"
+                                            id="sclYear">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row my-5">
+            <div class="col-md-12 ">
+                <div class="card a-card">
+                    <div class="card-header a-card-header">
+                        <h3 class="text-center">Experience</h3>
+                    </div>
+                    <div class="card-body a-card-body">
+                        <form>
+                            <div class="row">
+
+                                <div class="col-md-6">
+                                    <h3><i class="fas fa-thumbtack"></i></h3>
+                                    <div class="form-group">
+                                        <label for="1cmpName"><b>Company Name</b></label>
+                                        <input type="text" class="form-control" placeholder="Enter company name"
+                                            id="1cmpName">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="1position"><b>Position</b></label>
+                                        <input type="text" class="form-control" placeholder="Enter your position"
+                                            id="1position">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="1duration"><b>Duration</b></label>
+                                        <input type="text" class="form-control" placeholder="Enter duration"
+                                            id="1duration">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="1desc"><b>Description</b></label>
+                                        <textarea rows="4" class="form-control" placeholder="Enter your job description"
+                                            id="1desc"></textarea>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-md-6">
+                                    <h3><i class="fas fa-thumbtack"></i></h3>
+                                    <div class="form-group">
+                                        <label for="2cmpName"><b>Company Name</b></label>
+                                        <input type="text" class="form-control" placeholder="Enter company name"
+                                            id="2cmpName">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="2position"><b>Position</b></label>
+                                        <input type="text" class="form-control" placeholder="Enter your position"
+                                            id="2position">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="2duration"><b>Duration</b></label>
+                                        <input type="text" class="form-control" placeholder="Enter duration"
+                                            id="2duration">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="2desc"><b>Description</b></label>
+                                        <textarea rows="4" class="form-control" placeholder="Enter your job description"
+                                            id="2desc"></textarea>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-md-12 my-5">
+                <div class="card a-card">
+                    <div class="card-header a-card-header">
+                        <h3 class="text-center">Projects</h3>
+                    </div>
+                    <div class="card-body a-card-body">
+                        <form>
+                            <div class="row">
+
+                                <div class="col-md-6">
+                                    <h3><i class="fas fa-thumbtack"></i></h3>
+                                    <div class="form-group">
+                                        <label for="p1title"><b>Title</b></label>
+                                        <input type="text" class="form-control" placeholder="Enter project title"
+                                            id="p1title">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="p1Link"><b>Link</b></label>
+                                        <input type="text" class="form-control" placeholder="Enter project link"
+                                            id="p1Link">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="p1Desc"><b>Description</b></label>
+                                        <textarea rows="4" class="form-control"
+                                            placeholder="Enter your project description" id="p1Desc"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <h3><i class="fas fa-thumbtack"></i></h3>
+                                    <div class="form-group">
+                                        <label for="p2title"><b>Title</b></label>
+                                        <input type="text" class="form-control" placeholder="Enter project title"
+                                            id="p2title">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="p2Link"><b>Link</b></label>
+                                        <input type="text" class="form-control" placeholder="Enter project link"
+                                            id="p2Link">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="p2Desc"><b>Description</b></label>
+                                        <textarea rows="4" class="form-control"
+                                            placeholder="Enter your project description" id="p2Desc"></textarea>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+            <div class="container text-center my-5">
+                <button type="button" onclick="generateCV()" class="btn-lg btn-dark mb-5" name="button">Generate
+                    CV</button>
+            </div>
+        </div>
+
+    </div>
+
+    <!--cv template-->
+    <div class="container" id="cv-template">
+        <div class="container" id="printDoc">
+
+            <div class="row">
+                <div class="col-4 background py-4">
+                    <!--first col-->
+
+                    <div class="container ">
+
+
+                        <img src="default.jpg" alt="" id="imgT" class="myimg mt-2" />
+                        <hr />
+                        <h4>Contact Info.</h4>
+                        <p id="emailT"></p>
+                        <p id="contactT"></p>
+
+                        <hr />
+                        <h4>Profile Links</h4>
+                        <p>
+                            <a id="LinkedinT" href="#1"><b>LinkedIn </b><i class="fab fa-linkedin"></i></a>
+                        </p>
+                        <p>
+                            <a id="githubT" href="#1"><b>Github </b><i class="fab fa-github-square"></i></a>
+                        </p>
+                        <p>
+                            <a id="codechefT" href="#1"><b>Codechef </b><i class="fas fa-laptop-code"></i></a>
+                        </p>
+                        <p>
+                            <a id="hackerrankT" href="#1"><b>Hackerrank </b><i class="fab fa-hackerrank"></i></a>
+                        </p>
+
+                        <hr>
+                        <h4>Skills</h4>
+                        <p id="skillsT">C++, Java, Python, Html, Css, JQuery, Git, Github</p>
+                        <hr />
+                    </div>
+                </div>
+
+                <div class="col-8 py-4 background2">
+                    <!--second col-->
+
+                    <h1 id="nameT">Ruchi Tetwal</h1>
+
+                    <!--objective-->
+
+                    <div class="card ">
+                        <div class="card-header cv-card-header">
+                            <h4>Objective</h4>
+                        </div>
+                        <div class="card-body cv-card-body">
+                            <p id="objectiveT">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, quo! Reiciendis, odit
+                                quasi?
+                                Ipsa aliquid necessitatibus totam ipsam fugiat temporibus nulla eligendi voluptas eos
+                                sunt
+                                animi mollitia ullam unde reprehenderit alias rerum. Minima dolorem iste explicabo
+                                voluptatem?
+                            </p>
+                        </div>
+                    </div>
+
+                    <!--work experience-->
+
+                    <div class="card mt-4">
+                        <div class="card-header cv-card-header">
+                            <h4>Work Experience</h4>
+                        </div>
+                        <div class="card-body cv-card-body">
+
+                            <h6 class="year" id="1durationT">Year</h6>
+                            <h5 id="1cmpNameT">Company 1</h5>
+                            <h6 id="1positionT">Position</h6>
+                            <p id="1descT">description</p>
+
+                            <hr>
+
+                            <h6 class="year" id="2durationT">Year</h6>
+                            <h5 id="2cmpNameT">Company 2</h5>
+                            <h6 id="2positionT">Position</h6>
+                            <p id="2descT">description</p>
+
+                        </div>
+                    </div>
+
+                    <!--academic qualification-->
+
+                    <div class="card mt-4 ">
+                        <div class="card-header cv-card-header">
+                            <h4>Academic Qualification</h4>
+                        </div>
+                        <div class="card-body cv-card-body">
+                            <br>
+                            <div class="row">
+                                <div class="col-md-6 college-box">
+                                    <u>
+                                        <h4>College</h4>
+                                    </u>
+                                    <div style="overflow: hidden;">
+                                        <p style="float: left;" id="collegeNameT"><b>College name</b></p>
+                                        <p style="float: right;" class="year" id="collegeYearT">Year</p>
+                                    </div>
+                                    <p id="qualificationT">Qualificaton</p>
+                                    <p><b>CGPA/Percentage: </b></p>
+
+                                    <p id="clgCgpaT">9.0</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <h4><u>School</u></h4>
+                                    <div style="overflow: hidden;">
+                                        <p style="float: left;" id="schoolNameT"><b>School name</b></p>
+                                        <p style="float: right;" class="year" id="sclYearT">Year</p>
+                                    </div>
+                                    <p><b>SSC CGPA/Percentage:</b></p>
+                                    <p id="sscCgpaT">9.0</p>
+                                    <p><b>HSC CGPA/Percentage:</b></p>
+                                    <p id="hscCgpaT">9.0</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!--projects-->
+
+                    <div class="card mt-4 ">
+                        <div class="card-header cv-card-header">
+                            <h4>Projects</h4>
+                        </div>
+                        <div class="card-body cv-card-body">
+                            <div class="row">
+                                <div class="col-md-6 college-box">
+                                    <h4 id="p1titleT">project1</h4>
+
+                                    <a id="p1LinkT" href="">Link1</a>
+                                    <p id="p1DescT">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
+                                        quis.</p>
+                                </div>
+                                <div class="col-md-6">
+
+                                    <h4 id="p2titleT">project2</h4>
+                                    <a id="p2LinkT" href="">Link2</a>
+                                    <p id="p2DescT">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
+                                        quis.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="contaniner my-5 text-center">
+            <button onclick="printCV()" class="btn background">
+                Print CV
+            </button>
+        </div>
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"
+        integrity="sha512-ICHkAOXzVDEkL5xkXjAWRV/hx6Bq4ID/uhRcnj9zS7QCdCbhVtfgjwt/vTfUBtW1wzBkErImU0huK3LDVeEr8g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
