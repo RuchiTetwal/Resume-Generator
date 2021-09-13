@@ -18,13 +18,12 @@
 
 #cv-template{
 
-  display: none;
+  display:none;
     
 }
 
 .myimg{
     border: 2px solid black;
-    margin-left: 20px;
     width:200px;
 }
 
