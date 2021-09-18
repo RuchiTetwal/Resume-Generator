@@ -33,11 +33,9 @@ function generateCV(){
     document.getElementById("githubT").innerHTML= document.getElementById("github").value;
     document.getElementById("githubT").href= document.getElementById("github").value;
 
-    document.getElementById("codechefT").innerHTML= document.getElementById("codechef").value;
-    document.getElementById("codechefT").href= document.getElementById("codechef").value;
+    document.getElementById("portfolioT").innerHTML= document.getElementById("portfolio").value;
+    document.getElementById("portfolioT").href= document.getElementById("portfolio").value;
 
-    document.getElementById("hackerrankT").innerHTML= document.getElementById("hackerrank").value;
-    document.getElementById("hackerrankT").href= document.getElementById("hackerrank").value;
 
     document.getElementById("1cmpNameT").innerHTML= document.getElementById("1cmpName").value;
 
