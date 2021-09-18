@@ -16,15 +16,16 @@ function generateCV(){
 
     let file= document.getElementById("img").files[0];
 
-    let reader = new FileReader();
+    if(file!=null){
+        let reader = new FileReader();
 
-    reader.readAsDataURL(file);
+         reader.readAsDataURL(file);
 
-    reader.onloadend = function(){
+        reader.onloadend = function(){
         document.getElementById("imgT").src= reader.result;
+        }
     }
-
-    
+ 
 
     document.getElementById("LinkedinT").innerHTML= document.getElementById("Linkedin").value;
     document.getElementById("LinkedinT").href=document.getElementById("Linkedin").value;
